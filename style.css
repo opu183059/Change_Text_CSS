@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.316)), url(bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.123);
+    width: auto;
+    height: 60px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 100vh;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.text{
+    width: auto;
+    font-size: 30px;
+    line-height: 5px;
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+span{
+    color: rgb(1, 255, 1);
+}
+
+.changecontent::after {
+    content: '';
+    animation: changetext 15s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: '"Dhaka"';
+    }
+    20% {
+        content: '"Chittagong"';
+    }
+    35% {
+        content: '"Sylhet"';
+    }
+    50% {
+        content: '"Rajshahi"';
+    }
+    65% {
+        content: '"Borishal"';
+    }
+    75% {
+        content: '"Rongpur"';
+    }
+    85% {
+        content: '"Khulna"';
+    }
+    100% {
+        content: '"Maimanshing"';
+    }
+}
